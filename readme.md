@@ -11,4 +11,4 @@ Get
 
 Set
 ---
-`$('#myElement').outerHTML('<div><p>New Stuff!</p></div>');
+`$('#myElement').outerHTML('<div><p>New Stuff!</p></div>');`
