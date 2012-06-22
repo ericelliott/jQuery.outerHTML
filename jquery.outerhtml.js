@@ -18,17 +18,17 @@
             // Replace is already baked into jQuery
             // This is here for consistency with .html()
             if (replacement) {
-                return $this.replaceWith(replacement);
+                content = $this.replaceWith(replacement);
             // Fall back to native if it's supported
-            } else if ($this[0].hasOwnProperty('outerHTML')) {
-                return $this[0].outerHTML;
+            } else if (typeof $this[0].outerHTML !== 'undefined') {
+                content = $this[0].outerHTML;
             // Fake it 'till you make it!
             } else {
                 // Don't use clone because of textarea bug?
                 content = $this.wrap('<div>').parent().html();
                 $this.unwrap();
-                return content;
             }
+            return content;
         };
     }
 }(jQuery));
