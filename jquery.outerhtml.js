@@ -1,10 +1,10 @@
 /**
  * jQuery outerHTML
- * By Eric Hamilton
+ * By Eric Elliott
  * http://ericleads.com/
  * 
- * (c) 2012
- * MIT / GPL Dual License
+ * Copyright (c) Eric Elliott 2012
+ * MIT License
  * Adds outerHTML support to jQuery.
  */
 
